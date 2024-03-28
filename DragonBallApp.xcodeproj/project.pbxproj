@@ -14,6 +14,10 @@
 		D12073AC2BB5C68B00699C7A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073AB2BB5C68B00699C7A /* NetworkManager.swift */; };
 		D12073AE2BB5C72F00699C7A /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073AD2BB5C72F00699C7A /* CharacterResponse.swift */; };
 		D12073B02BB5CE7500699C7A /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073AF2BB5CE7500699C7A /* DBViewModel.swift */; };
+		D12073B32BB5D3FE00699C7A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D12073B22BB5D3FE00699C7A /* Kingfisher */; };
+		D12073B52BB5D68C00699C7A /* ImageCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073B42BB5D68C00699C7A /* ImageCharacterView.swift */; };
+		D12073B72BB5D74800699C7A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073B62BB5D74800699C7A /* MockData.swift */; };
+		D12073B92BB5D89900699C7A /* DBCharacterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073B82BB5D89900699C7A /* DBCharacterCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,9 @@
 		D12073AB2BB5C68B00699C7A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D12073AD2BB5C72F00699C7A /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
 		D12073AF2BB5CE7500699C7A /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
+		D12073B42BB5D68C00699C7A /* ImageCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCharacterView.swift; sourceTree = "<group>"; };
+		D12073B62BB5D74800699C7A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		D12073B82BB5D89900699C7A /* DBCharacterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCharacterCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12073B32BB5D3FE00699C7A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,9 @@
 				D12073AB2BB5C68B00699C7A /* NetworkManager.swift */,
 				D12073AF2BB5CE7500699C7A /* DBViewModel.swift */,
 				D12073AD2BB5C72F00699C7A /* CharacterResponse.swift */,
+				D12073B42BB5D68C00699C7A /* ImageCharacterView.swift */,
+				D12073B62BB5D74800699C7A /* MockData.swift */,
+				D12073B82BB5D89900699C7A /* DBCharacterCellView.swift */,
 			);
 			path = DragonBallApp;
 			sourceTree = "<group>";
@@ -92,6 +103,9 @@
 			dependencies = (
 			);
 			name = DragonBallApp;
+			packageProductDependencies = (
+				D12073B22BB5D3FE00699C7A /* Kingfisher */,
+			);
 			productName = DragonBallApp;
 			productReference = D120739A2BB5C66000699C7A /* DragonBallApp.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +134,9 @@
 				Base,
 			);
 			mainGroup = D12073912BB5C66000699C7A;
+			packageReferences = (
+				D12073B12BB5D3FE00699C7A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D120739B2BB5C66000699C7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,10 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D12073B52BB5D68C00699C7A /* ImageCharacterView.swift in Sources */,
 				D12073AC2BB5C68B00699C7A /* NetworkManager.swift in Sources */,
+				D12073B92BB5D89900699C7A /* DBCharacterCellView.swift in Sources */,
 				D12073B02BB5CE7500699C7A /* DBViewModel.swift in Sources */,
 				D12073A02BB5C66000699C7A /* ContentView.swift in Sources */,
 				D12073AE2BB5C72F00699C7A /* CharacterResponse.swift in Sources */,
+				D12073B72BB5D74800699C7A /* MockData.swift in Sources */,
 				D120739E2BB5C66000699C7A /* DragonBallAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D12073B12BB5D3FE00699C7A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D12073B22BB5D3FE00699C7A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D12073B12BB5D3FE00699C7A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D12073922BB5C66000699C7A /* Project object */;
 }
