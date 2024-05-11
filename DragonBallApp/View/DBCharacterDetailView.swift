@@ -17,6 +17,10 @@ struct DBCharacterDetailView: View {
         ScrollView {
             VStack(spacing: 18) {
                 ZStack {
+                    GifWebView(gifName: character.race == "Saiyan" ? "fondo2" : "fondo")
+                        .frame(height: 400)
+                        .frame(maxWidth: .infinity)
+                    
                     VStack {
                         ImageCharacterView(url: character.image, width: 140, height: 230)
                             .shadow(radius: 12)

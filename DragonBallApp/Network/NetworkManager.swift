@@ -19,6 +19,7 @@ class NetworkManager: NSObject, ObservableObject {
     static let shared = NetworkManager()
     
     static let baseURL = "https://dragonball-api.com/api/characters?page="
+    static let detailCharacterURL = "dragonball-api.com/api/characters/"
     
     func getListOfCharacters(pageNumber: Int, completion: @escaping (Result<CharacterResponse, APIError>) -> Void) {
         guard let url = URL(string: NetworkManager.baseURL+"\(pageNumber)"+"&limit=10") else {
@@ -54,5 +55,13 @@ class NetworkManager: NSObject, ObservableObject {
         }
         
         task.resume()
+    }
+    
+    func getDetailOfCharacters(characterId: Int, completed: @escaping (Result<CharacterDetailResponse, APIError>) -> Void) {
+        guard let url = URL(string: NetworkManager.detailCharacterURL+"\(characterId)") else {
+            return
+        }
+        
+        
     }
 }

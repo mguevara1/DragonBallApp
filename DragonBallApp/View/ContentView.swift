@@ -19,7 +19,8 @@ struct ContentView: View {
                 LazyVGrid(columns: numberOfColumns, spacing: 10) {
                     ForEach(viewModel.characters, id: \.id) { character in
                         VStack {
-                            NavigationLink(destination: EmptyView()) { DBCharacterCellView(dbCharacter: character, viewModel: viewModel)
+                            NavigationLink(destination: DBCharacterDetailView(viewModel: viewModel, character: character)) {
+                                DBCharacterCellView(dbCharacter: character, viewModel: viewModel)
                             }
                         }
                     }

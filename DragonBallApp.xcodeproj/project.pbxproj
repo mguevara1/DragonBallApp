@@ -19,6 +19,10 @@
 		D12073B72BB5D74800699C7A /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073B62BB5D74800699C7A /* MockData.swift */; };
 		D12073B92BB5D89900699C7A /* DBCharacterCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073B82BB5D89900699C7A /* DBCharacterCellView.swift */; };
 		D12073BB2BB5DDB100699C7A /* DBCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12073BA2BB5DDB100699C7A /* DBCharacterDetailView.swift */; };
+		D17C03242BE31B4D00696ED7 /* GifWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C03232BE31B4D00696ED7 /* GifWebView.swift */; };
+		D17C03272BE32BE900696ED7 /* fondo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D17C03252BE32BE900696ED7 /* fondo.gif */; };
+		D17C03282BE32BE900696ED7 /* fondo2.gif in Resources */ = {isa = PBXBuildFile; fileRef = D17C03262BE32BE900696ED7 /* fondo2.gif */; };
+		D17C032B2BE3500600696ED7 /* CharacterDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17C032A2BE3500600696ED7 /* CharacterDetailResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,11 @@
 		D12073B62BB5D74800699C7A /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D12073B82BB5D89900699C7A /* DBCharacterCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCharacterCellView.swift; sourceTree = "<group>"; };
 		D12073BA2BB5DDB100699C7A /* DBCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCharacterDetailView.swift; sourceTree = "<group>"; };
+		D17C03232BE31B4D00696ED7 /* GifWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifWebView.swift; sourceTree = "<group>"; };
+		D17C03252BE32BE900696ED7 /* fondo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fondo.gif; sourceTree = "<group>"; };
+		D17C03262BE32BE900696ED7 /* fondo2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = fondo2.gif; sourceTree = "<group>"; };
+		D17C03292BE3356F00696ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D17C032A2BE3500600696ED7 /* CharacterDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +76,15 @@
 		D120739C2BB5C66000699C7A /* DragonBallApp */ = {
 			isa = PBXGroup;
 			children = (
+				D17C03292BE3356F00696ED7 /* Info.plist */,
 				D17C03222BE312DC00696ED7 /* Model */,
 				D17C03212BE312CA00696ED7 /* Network */,
 				D17C03202BE3127B00696ED7 /* ViewModel */,
 				D17C031F2BE3125A00696ED7 /* View */,
 				D120739D2BB5C66000699C7A /* DragonBallAppApp.swift */,
 				D12073A12BB5C66100699C7A /* Assets.xcassets */,
+				D17C03252BE32BE900696ED7 /* fondo.gif */,
+				D17C03262BE32BE900696ED7 /* fondo2.gif */,
 				D12073A32BB5C66100699C7A /* Preview Content */,
 				D12073B62BB5D74800699C7A /* MockData.swift */,
 			);
@@ -94,6 +106,7 @@
 				D12073B42BB5D68C00699C7A /* ImageCharacterView.swift */,
 				D12073BA2BB5DDB100699C7A /* DBCharacterDetailView.swift */,
 				D120739F2BB5C66000699C7A /* ContentView.swift */,
+				D17C03232BE31B4D00696ED7 /* GifWebView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				D12073AD2BB5C72F00699C7A /* CharacterResponse.swift */,
+				D17C032A2BE3500600696ED7 /* CharacterDetailResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,7 +200,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17C03272BE32BE900696ED7 /* fondo.gif in Resources */,
 				D12073A52BB5C66100699C7A /* Preview Assets.xcassets in Resources */,
+				D17C03282BE32BE900696ED7 /* fondo2.gif in Resources */,
 				D12073A22BB5C66100699C7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,10 +218,12 @@
 				D12073AC2BB5C68B00699C7A /* NetworkManager.swift in Sources */,
 				D12073B92BB5D89900699C7A /* DBCharacterCellView.swift in Sources */,
 				D12073B02BB5CE7500699C7A /* DBViewModel.swift in Sources */,
+				D17C032B2BE3500600696ED7 /* CharacterDetailResponse.swift in Sources */,
 				D12073A02BB5C66000699C7A /* ContentView.swift in Sources */,
 				D12073AE2BB5C72F00699C7A /* CharacterResponse.swift in Sources */,
 				D12073B72BB5D74800699C7A /* MockData.swift in Sources */,
 				D120739E2BB5C66000699C7A /* DragonBallAppApp.swift in Sources */,
+				D17C03242BE31B4D00696ED7 /* GifWebView.swift in Sources */,
 				D12073BB2BB5DDB100699C7A /* DBCharacterDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +361,7 @@
 				DEVELOPMENT_TEAM = DYCUD2KNPS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DragonBallApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -372,6 +391,7 @@
 				DEVELOPMENT_TEAM = DYCUD2KNPS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DragonBallApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
